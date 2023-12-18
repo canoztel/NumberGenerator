@@ -6,13 +6,13 @@ numberBox.forEach(box => {
     const number = parseInt(box.textContent); //It takes the text content in each box and converts that text to an integer.
 
     if (isPrime(number)) {
-        box.style.backgroundColor = "Gold"//Makes the background of prime numbers white
+        box.style.backgroundColor = "tomato"//Makes the background of prime numbers white
     }
     else if (number % 2 === 0) {
         box.style.backgroundColor = "LimeGreen"; //Makes the background of even numbers green
     }
     else {
-        box.style.backgroundColor = "tomato"; //Makes the background of odd numbers red
+        box.style.backgroundColor = "Gold"; //Makes the background of odd numbers red
     }
 });
 
